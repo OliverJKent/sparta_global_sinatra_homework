@@ -1,0 +1,12 @@
+<head>
+  <link rel="stylesheet" href="/css/global.css">
+</head>
+<%= erb :'partials/navigation', :layout => false %>
+<p>Posts Index </p>
+    <% @posts.each do |post| %>
+    <div>
+    <a href="/<%= post.id%>"><%= post.title%></a>
+  </div>
+    <% end %>
+  </body>
+</html>

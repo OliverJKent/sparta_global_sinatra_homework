@@ -1,0 +1,5 @@
+source = "rubygems.org"
+gem "pg"
+gem "sinatra"
+gem "sinatra-contrib"
+gem "rack"

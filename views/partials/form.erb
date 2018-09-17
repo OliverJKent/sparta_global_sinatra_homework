@@ -1,0 +1,17 @@
+<form action="/<%= @posts[:id]%>" method="post">
+  <div >
+    <label>Title</label>
+    <input type="text" name="title" value="<%= @posts[:title]%>" placeholder="Enter the title">
+  </div>
+
+  <div >
+    <label>Text</label>
+    <textarea type="text" name="body" placeholder="Enter a text">
+    <%= @posts[:body]%></textarea>
+  </div>
+  <% if (@posts[:id] != '')%>
+  <input type="hidden" name="_method" value="PUT">
+  <%end%>
+  <input type="submit" name="" value="save post">
+
+</form>
